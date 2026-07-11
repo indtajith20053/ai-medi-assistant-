@@ -67,7 +67,7 @@ if not OPENROUTER_API_KEY:
     raise ValueError(
         "OPENROUTER_API_KEY not found. Create a .env file in this script's "
         "folder with a line like:\n"
-        "OPENROUTER_API_KEY=sk-or-v1-xxxxxxxxxxxxxxxxxxxxxxxx\n"
+        "OPENROUTER_API_KEY=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"
         f"Current working directory: {os.getcwd()}"
     )
 
@@ -142,7 +142,7 @@ def invoke_with_fallback(
 # ---------------------------------------------------------------------------
 # 4. Load WHO Reference PDF, Chunk, Embed, and Build/Load Vector Store
 # ---------------------------------------------------------------------------
-PDF_FILE = os.path.join("knowledge-base", "who_guideline.pdf")
+PDF_FILE = os.path.join("knowledge_base", "who_guideline.pdf")
 
 CHROMA_DIR = "chroma_db"
 COLLECTION_NAME = "who_collection"
